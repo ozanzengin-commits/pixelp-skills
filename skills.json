@@ -6,8 +6,16 @@
       "name": "Storefront Screenshots",
       "version": "1.1.0",
       "updated": "2026-10-13",
-      "summary": "App Store ve Google Play screenshot setlerini Figma icinde tasarlar: kompozisyon kaliplari, magaza politikasi sinirlari ve Figma Plugin API'nin en cok vakit yiyen hatalari.",
-      "changes": "Cihazin frame kenariyla iliskisi kurala baglandi: ya dort kosesi tam ve sol/sag/alt uc esit marginli (contained), ya da bezelin duz kisminda kesilmis (bled). Kose yayini yariya kesen hal yasak. Zebra muaf.",
+      "summary": {
+        "en": "Designs App Store and Google Play screenshot sets inside Figma: composition patterns, store policy limits, and the Figma Plugin API failures that waste the most time.",
+        "tr": "App Store ve Google Play screenshot setlerini Figma içinde tasarlar: kompozisyon kalıpları, mağaza politikası sınırları ve Figma Plugin API'nin en çok vakit yiyen hataları.",
+        "es": "Diseña sets de capturas para App Store y Google Play dentro de Figma: patrones de composición, límites de las políticas de las tiendas y los fallos de la API de plugins de Figma que más tiempo cuestan."
+      },
+      "changes": {
+        "en": "The device's relationship to the frame edge is now a rule: either all four corners complete with three equal margins (contained), or cut on the straight part of the bezel (bled). Cutting through the corner arc is forbidden. Zebra is exempt.",
+        "tr": "Cihazın frame kenarıyla ilişkisi kurala bağlandı: ya dört köşesi tam ve sol/sağ/alt üç eşit marginli (contained), ya da bezelin düz kısmında kesilmiş (bled). Köşe yayını yarıya kesen hâl yasak. Zebra muaf.",
+        "es": "La relación del dispositivo con el borde del marco ahora es una regla: o las cuatro esquinas completas con tres márgenes iguales (contained), o cortado en la parte recta del bisel (bled). Cortar el arco de la esquina está prohibido. Zebra queda exento."
+      },
       "url": "https://github.com/ozanzengin-commits/pixelp-skills/releases/latest",
       "install": "~/.claude/skills/storefront-screenshots/"
     }
