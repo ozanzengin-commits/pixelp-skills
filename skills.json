@@ -1,0 +1,15 @@
+{
+  "updated": "2026-10-13",
+  "skills": [
+    {
+      "id": "storefront-screenshots",
+      "name": "Storefront Screenshots",
+      "version": "1.1.0",
+      "updated": "2026-10-13",
+      "summary": "App Store ve Google Play screenshot setlerini Figma icinde tasarlar: kompozisyon kaliplari, magaza politikasi sinirlari ve Figma Plugin API'nin en cok vakit yiyen hatalari.",
+      "changes": "Cihazin frame kenariyla iliskisi kurala baglandi: ya dort kosesi tam ve sol/sag/alt uc esit marginli (contained), ya da bezelin duz kisminda kesilmis (bled). Kose yayini yariya kesen hal yasak. Zebra muaf.",
+      "url": "https://github.com/ozanzengin-commits/pixelp-skills/releases/latest",
+      "install": "~/.claude/skills/storefront-screenshots/"
+    }
+  ]
+}
