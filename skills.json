@@ -16,7 +16,7 @@
         "tr": "Cihazın frame kenarıyla ilişkisi kurala bağlandı: ya dört köşesi tam ve sol/sağ/alt üç eşit marginli (contained), ya da bezelin düz kısmında kesilmiş (bled). Köşe yayını yarıya kesen hâl yasak. Zebra muaf.",
         "es": "La relación del dispositivo con el borde del marco ahora es una regla: o las cuatro esquinas completas con tres márgenes iguales (contained), o cortado en la parte recta del bisel (bled). Cortar el arco de la esquina está prohibido. Zebra queda exento."
       },
-      "url": "https://github.com/ozanzengin-commits/pixelp-skills/releases/latest",
+      "url": "https://github.com/ozanzengin-commits/pixelp-skills/raw/main/storefront-screenshots.zip",
       "install": "~/.claude/skills/storefront-screenshots/"
     }
   ]
