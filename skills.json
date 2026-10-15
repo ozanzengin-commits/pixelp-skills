@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "skills": [
     {
       "id": "storefront-screenshots",
       "name": "Storefront Screenshots",
-      "version": "1.1.0",
-      "updated": "2026-10-13",
+      "version": "1.2.0",
+      "updated": "2026-10-15",
       "summary": {
         "en": "Designs App Store and Google Play screenshot sets inside Figma: composition patterns, store policy limits, and the Figma Plugin API failures that waste the most time.",
         "tr": "App Store ve Google Play screenshot setlerini Figma içinde tasarlar: kompozisyon kalıpları, mağaza politikası sınırları ve Figma Plugin API'nin en çok vakit yiyen hataları.",
         "es": "Diseña sets de capturas para App Store y Google Play dentro de Figma: patrones de composición, límites de las políticas de las tiendas y los fallos de la API de plugins de Figma que más tiempo cuestan."
       },
       "changes": {
-        "en": "The device's relationship to the frame edge is now a rule: either all four corners complete with three equal margins (contained), or cut on the straight part of the bezel (bled). Cutting through the corner arc is forbidden. Zebra is exempt.",
-        "tr": "Cihazın frame kenarıyla ilişkisi kurala bağlandı: ya dört köşesi tam ve sol/sağ/alt üç eşit marginli (contained), ya da bezelin düz kısmında kesilmiş (bled). Köşe yayını yarıya kesen hâl yasak. Zebra muaf.",
-        "es": "La relación del dispositivo con el borde del marco ahora es una regla: o las cuatro esquinas completas con tres márgenes iguales (contained), o cortado en la parte recta del bisel (bled). Cortar el arco de la esquina está prohibido. Zebra queda exento."
+        "en": "Two new composition rules and four Plugin API failure modes. Resizing a set: the SUBJECT keeps its scale relative to the frame, not the image — measure anchors and match them, scale to cover and crop, never fit. Elements that span two screens must be built against the gap between screenshots, not flush, or they break the moment the store spaces them. API: absolutely positioned auto-layout children cannot take FILL; with dynamic-page access no other page can be read before loading it; grid auto-layout manages its own row count and child positions; a lookup that found nothing returns null.",
+        "tr": "İki yeni kompozisyon kuralı ve dört Plugin API hatası. Resize'da ölçeğini koruyan şey görsel değil ÖZNE — çapa ölçüleri alınıp eşleştirilecek, görsel cover edilip kırpılacak, asla fit edilmeyecek. İki ekrana yayılan öğeler kareler bitişikken değil aradaki boşluk varken örtüşecek şekilde kurulacak; yoksa store boşluğu koyduğu anda kopuyorlar. API: ABSOLUTE konumlanan auto-layout çocuğuna FILL verilemez; dynamic-page erişiminde başka bir sayfa yüklenmeden okunamaz; grid auto-layout satır sayısını ve çocuk konumlarını kendi yönetir; sonuç bulamayan arama null döner.",
+        "es": "Dos reglas de composición nuevas y cuatro fallos de la API de plugins. Al redimensionar, lo que conserva su escala no es la imagen sino el SUJETO: mide anclas y haz que coincidan, escala para cubrir y recorta, nunca ajustes. Los elementos que cruzan dos pantallas deben construirse contando con el hueco entre capturas, no pegadas, o se rompen en cuanto la tienda las separa. API: un hijo de auto-layout con posición absoluta no admite FILL; con acceso dynamic-page ninguna otra página puede leerse sin cargarla; el auto-layout de cuadrícula gestiona por su cuenta las filas y las posiciones; una búsqueda sin resultado devuelve null."
       },
       "url": "https://github.com/ozanzengin-commits/pixelp-skills/raw/main/storefront-screenshots.zip",
       "install": "~/.claude/skills/storefront-screenshots/"
