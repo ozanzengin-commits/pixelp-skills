@@ -99,6 +99,20 @@ Almost every strong set uses at least one. A headline in a single uniform treatm
 
 **Do not over-crop.** A device cut off so that only a sliver of interface survives tells the viewer nothing. Show enough of the screen that the feature in the headline is visible and legible at thumbnail size, then let the rest run off the bottom.
 
+### Mirroring composite controls for right-to-left
+
+When a set is rebuilt for Arabic, Hebrew, Persian or Urdu, the controls inside the device screen have to move to the other side of their rows. The failure that shows up most often, and the one a reader spots instantly, is a control that comes apart while moving.
+
+A checkbox is not one object: it is a circle plus a tick drawn on top of it. A radio is a ring plus a dot. A toggle is a track plus a knob. A rating is a star plus its fill. Reposition those parts one at a time and the container lands on the new side while the glyph inside it stays where it was — the tick ends up floating beside its circle, or sitting on top of the words.
+
+**Move the whole control, or its group, as one unit.** The internal geometry of a control never changes in a mirror: the tick stays exactly where it was inside its circle. Only the control's position in the row changes.
+
+**A tick is not a directional icon.** Neither is a circle, a star, a dot or a plus. Do not flip the glyph itself. Flipping a checkmark produces a mark that reads as wrong even though most people cannot say why. Only arrows, chevrons and other shapes whose meaning depends on which way they point get mirrored.
+
+**Where the row is an auto-layout of [control][text], reverse the item order** and let auto-layout place them. Keeping the original order and pushing the control across with an offset or a negative margin fails in a particular way: the offset was computed for the other direction, so the result lands close enough to look almost right and is wrong by exactly that much.
+
+**Verify by arithmetic, not by eye.** After moving every control, compare the centre of each glyph against the centre of the container it belongs in; they have to match within a pixel. A tick two pixels out of its circle is obvious to a reader and invisible on a zoomed-out canvas.
+
 ### Elements that span two screens
 
 A strong set sometimes runs one element across the boundary between two neighbouring screens — a badge, a ribbon, a shape, a gradient, the edge of a device. Half of it sits at the right edge of screen N, the other half at the left edge of screen N+1, and the pair reads as one continuous picture when the store shows them in a row. It is one of the cheapest ways to make a set look designed rather than assembled.
