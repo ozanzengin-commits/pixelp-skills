@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-23",
   "skills": [
     {
       "id": "storefront-screenshots",
       "name": "Storefront Screenshots",
-      "version": "1.2.0",
-      "updated": "2026-10-15",
+      "version": "1.2.1",
+      "updated": "2026-10-23",
       "summary": {
         "en": "Designs App Store and Google Play screenshot sets inside Figma: composition patterns, store policy limits, and the Figma Plugin API failures that waste the most time.",
         "tr": "App Store ve Google Play screenshot setlerini Figma içinde tasarlar: kompozisyon kalıpları, mağaza politikası sınırları ve Figma Plugin API'nin en çok vakit yiyen hataları.",
         "es": "Diseña sets de capturas para App Store y Google Play dentro de Figma: patrones de composición, límites de las políticas de las tiendas y los fallos de la API de plugins de Figma que más tiempo cuestan."
       },
       "changes": {
-        "en": "Two new composition rules and four Plugin API failure modes. Resizing a set: the SUBJECT keeps its scale relative to the frame, not the image — measure anchors and match them, scale to cover and crop, never fit. Elements that span two screens must be built against the gap between screenshots, not flush, or they break the moment the store spaces them. API: absolutely positioned auto-layout children cannot take FILL; with dynamic-page access no other page can be read before loading it; grid auto-layout manages its own row count and child positions; a lookup that found nothing returns null.",
-        "tr": "İki yeni kompozisyon kuralı ve dört Plugin API hatası. Resize'da ölçeğini koruyan şey görsel değil ÖZNE — çapa ölçüleri alınıp eşleştirilecek, görsel cover edilip kırpılacak, asla fit edilmeyecek. İki ekrana yayılan öğeler kareler bitişikken değil aradaki boşluk varken örtüşecek şekilde kurulacak; yoksa store boşluğu koyduğu anda kopuyorlar. API: ABSOLUTE konumlanan auto-layout çocuğuna FILL verilemez; dynamic-page erişiminde başka bir sayfa yüklenmeden okunamaz; grid auto-layout satır sayısını ve çocuk konumlarını kendi yönetir; sonuç bulamayan arama null döner.",
-        "es": "Dos reglas de composición nuevas y cuatro fallos de la API de plugins. Al redimensionar, lo que conserva su escala no es la imagen sino el SUJETO: mide anclas y haz que coincidan, escala para cubrir y recorta, nunca ajustes. Los elementos que cruzan dos pantallas deben construirse contando con el hueco entre capturas, no pegadas, o se rompen en cuanto la tienda las separa. API: un hijo de auto-layout con posición absoluta no admite FILL; con acceso dynamic-page ninguna otra página puede leerse sin cargarla; el auto-layout de cuadrícula gestiona por su cuenta las filas y las posiciones; una búsqueda sin resultado devuelve null."
+        "en": "Mirroring composite controls for right-to-left. A checkbox is a circle plus a tick, a toggle is a track plus a knob — move each control as one unit, or the container lands on the new side and the glyph inside it does not. A tick is not a directional icon: only its position changes, never the glyph. Reverse the auto-layout item order rather than pushing the control across with an offset, then verify each glyph's centre against its container's by arithmetic.",
+        "tr": "Sağdan sola geçişte bileşik kontrollerin aynalanması. Checkbox çember artı tik, toggle ray artı topuzdur — her kontrolü tek parça taşı, yoksa kap yeni tarafa gider, içindeki glif eski yerinde kalır. Tik yönlü bir ikon değildir: yalnızca konumu değişir, glifin kendisi asla. Kontrolü offset ile karşıya itmek yerine auto-layout öğe sırasını ters çevir, sonra her glifin merkezini kabının merkeziyle aritmetikle doğrula.",
+        "es": "Reflejo de controles compuestos en derecha a izquierda. Una casilla es un círculo más una marca, un interruptor es un riel más un botón: mueve cada control como una unidad o el contenedor cambia de lado y el glifo no. Una marca no es un icono direccional: solo cambia su posición, nunca el glifo. Invierte el orden de los elementos del auto-layout en vez de desplazar el control con un offset, y verifica el centro de cada glifo contra el de su contenedor con aritmética."
       },
       "url": "https://github.com/ozanzengin-commits/pixelp-skills/raw/main/storefront-screenshots.zip",
       "install": "~/.claude/skills/storefront-screenshots/"
